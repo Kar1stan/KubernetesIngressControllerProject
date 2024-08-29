@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-hosts
+spec:
+  rules:
+   - host: www.vlad.net
+     http:
+      paths:
+         - backend:
+            serviceName: my-multi-pods-service
+            servicePost: 80
+   
+   - host: web1.vlad.net
+     http:
+      paths:
+         - backend:
+            serviceName: another-service
+            servicePost: 8080
+   
+  
