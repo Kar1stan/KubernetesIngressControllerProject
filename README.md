@@ -12,21 +12,16 @@ https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.ex
 ### Git clone
 This will clone the project:
 ```
-$ git clone https://github.com/Kar1stan/KubernetesServiceProject.git
-$ cd KubernetesServiceProject
+$ git clone https://github.com/Kar1stan/KubernetesIngressControllerProject.git
+$ cd KubernetesIngressControllerProject
 ```
 
 ## 🚀 Run the manifest: 
-To run the deployment,open the terminal and run:
+To run the ingress controller,open the terminal and run:
 ```
-$ kubectl apply -f service-myweb-v1.yaml
+$ kubectl apply -f ingress-myweb-v1.yaml
 ```
-To delete deployment,open the terminal and run:
+To delete ingress controller,open the terminal and run:
 ```
-$ kubectl delete -f service-myweb-v1.yaml
+$ kubectl delete -f ingress-myweb-v1.yaml
 ```
-To show details of the service,open the terminal and run:
-```
-$ kubectl describe service my-multi-pods-service
-```
-To see results in the browser,paste External IP of the LoadBalancer with port of the container:
