@@ -23,7 +23,7 @@ $ kubectl apply -f ingress-myweb-v1.yaml
 ```
 To delete ingress controller,open the terminal and run:
 ```
-$ kubectl delete -f ingress-myweb-v1.yaml
+$ kubectl delete ingress ingress-myweb-v1
 ```
 To show details of the ingress,open the terminal and run:
 ```
